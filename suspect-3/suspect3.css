@@ -1,0 +1,367 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;   
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.background-image {
+    z-index: -1;
+    position:fixed;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    min-height: 100%;
+    min-width: 100%;
+    overflow-y:scroll;
+}
+
+
+.menu {
+    display:flex;    
+}
+
+.menu a {
+    font-family: MODENINE;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 15px 15;
+    margin: 10px 30px;
+    align-items: center;
+    position: relative;
+    left: 500px;  
+}
+
+.menu a:hover {
+    color: rgb(110, 1, 1);
+}
+
+.line1 {
+    width: 100%;
+    height: 10px;
+    background: white;
+    position:relative;
+    box-sizing: border-box;
+    top: 20.5%;
+    left: 0;
+    right: 0;   
+}
+
+.line2 {
+    width: 80%;
+    height: 1px;
+    background: white;
+    position:relative;
+    bottom: 520px;
+    animation-name: EaseinOut;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+.line3 {
+    width: 50%;
+    height: 0.5px;
+    background: white;
+    position:relative;
+    bottom: 230px;
+    left: 45%; 
+}
+
+.line4 {
+    width: 50%;
+    height: 0.5px;
+    background: white;
+    position:relative;
+    bottom: 65px;
+    left: 45%; 
+}
+
+@keyframes EaseinOut { 
+    0% {
+        width: 80%;
+    } 
+    50% {
+        width: 50%;
+    } 
+    100% {
+        width: 85%;
+    } 
+    50% {
+        width: 40%;
+    } 
+    100% {
+        width: 80%;
+    } 
+    }
+
+
+.logo{
+    width: 80px;
+    position: relative;
+    right: -2%;
+    top: 10px;
+    
+}
+
+.logo:hover {
+    transform: translateY(-1px);
+    opacity: 60%;
+    color: rgb(110, 1, 1)
+}
+
+.headtext1 {
+    font-family: MODENINE;
+    font-size: 9pt;
+    color: white;
+    position:relative;
+    left: 85%;
+    cursor:default;
+    bottom: 40px;
+    
+}
+
+.headtext1:hover {
+    transform: translateY(-1px);
+    opacity: 60%
+}
+
+.headtext2 {
+    font-family: MODENINE;
+    font-size: 9pt;
+    color: white;
+    position: relative;
+    left: 83%; 
+    bottom: 28px;
+    cursor:default;
+}
+
+.headtext2:hover {
+    transform: translateY(-1px);
+    opacity: 60%
+}
+
+.sanchari{
+    width: 400px;
+    height: 410px;
+    border-radius: 9px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    left: 10%;
+    margin-top: 7.3%;
+}
+
+.alternate{
+    width: 400px;
+    height: 410px;
+    border-radius: 9px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    right: 18%;
+    opacity: 0%;
+    margin-top: 7.3%;
+    animation-name: blinking;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
+    animation-iteration-count: 8;
+}
+
+
+.sanchari:hover {
+    opacity: 95%;
+}
+
+
+.bodytext1 {
+    color: white;
+    position: relative;
+    left:45%;
+    bottom: 410px;
+    font-family: MODENINE;
+}
+
+.bodytext2 {
+    color: white;
+    position: relative;
+    left:45%;
+    bottom: 397px;
+    font-family: MODENINE;
+}
+.bodytext3 {
+    color: white;
+    position: relative;
+    left:44.9%;
+    bottom: 382px;
+    font-family: MODENINE;
+}
+
+.bodytext4 {
+    color: white;
+    position: relative;
+    left:44.99%;
+    bottom: 366px;
+    font-family: MODENINE;
+}
+
+.bodytext5 {
+    color: white;
+    position: relative;
+    left:45.1%;
+    bottom: 349px;
+    font-family: MODENINE;
+}
+
+.bodytext6 {
+    color: white;
+    position: relative;
+    left:68%;
+    bottom: 490px;
+    font-family: MODENINE;
+}
+
+.bodytext7 {
+    color: white;
+    position: relative;
+    left:68%;
+    bottom: 477.5px;
+    font-family: MODENINE;
+}
+
+.bodytext8 {
+    color: white;
+    position: relative;
+    left:68%;
+    bottom: 463px;
+    font-family: MODENINE;
+}
+
+.bodytext9 {
+    color: white;
+    position: relative;
+    left:68.1%;
+    bottom: 447.5px;
+    font-family: MODENINE;
+}
+
+.bodytext10 {
+    color: white;
+    position: relative;
+    left:68.1%;
+    bottom: 430.5px;
+    font-family: MODENINE;
+}
+
+
+.mainbody1 {
+    color: white;
+    position: relative;
+    left:45.1%;
+    bottom: 389px;
+    font-family: MODENINE; 
+}
+
+.mainbody2 {
+    color: white;
+    position: relative;
+    left:45.1%;
+    bottom: 380px;
+    font-family: MODENINE; 
+}
+
+.mainbody3 {
+    color: white;
+    position: relative;
+    left:45%;
+    bottom: 370px;
+    font-family: MODENINE; 
+}
+
+.mainbody4 {
+    color: white;
+    position: relative;
+    left:45%;
+    bottom: 360px;
+    font-family: MODENINE; 
+} 
+
+.RAAH {
+    position:relative;
+    font-family: MODENINE;
+    font-style: normal;
+    font-size: 12pt;
+    font-kerning: auto;
+    left:81%;
+    bottom: 376px;
+    text-decoration: underline;
+}
+
+.RAAH a {
+    color: rgb(162, 0, 0);
+}
+
+
+.bodytext11 {
+    color: white;
+    position: relative;
+    left: 45.1%;
+    bottom: 185.5px;
+    font-family: MODENINE;
+}
+
+.bodytext12 {
+    color: white;
+    position: relative;
+    left: 51.8%;
+    bottom: 201px;
+    font-family: MODENINE;
+    animation-name: blink;
+    animation-duration: 6.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+    25% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    75% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 100%;
+    }
+    20% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 100%;
+    }
+    60% {
+        opacity: 0%;
+    }
+    80% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
