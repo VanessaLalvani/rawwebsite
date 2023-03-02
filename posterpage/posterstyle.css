@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'MODENINE', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.background-image {
+    position:fixed;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%
+}
+
+
+.menu {
+    display:flex;
+    
+}
+
+.menu a {
+    font-family: MODENINE;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 15px 15;
+    margin: 10px 30px;
+    align-items: center;
+    position: relative;
+    left: 500px;
+
+   
+}
+
+.menu a:hover {
+    color: rgb(110, 1, 1);
+}
+
+.row {
+    color: white;
+    display:flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 40%;
+}
+
+h1 {
+    color:rgb(110, 1, 1);
+    font-size: 60px;
+    /* font-family: MODENINE; */
+    font-family: VCR OSD Mono;
+    padding-left: 9%;
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+    25% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+    98% {
+        opacity: 100%;
+    }
+    96% {
+        opacity: 0%;
+    }
+    94% {
+        opacity: 100%;
+    }
+    92% {
+        opacity: 0%;
+    }
+    85% {
+        opacity: 100%;
+    }
+    80% {
+        opacity: 0%;
+    }
+    0% {
+        opacity: 100%;
+    }
+
+
+
+}
+
+p {
+ color: white; 
+ font-size: 11px;
+ line-height: 18px;
+ padding-left: 9%;
+ position:relative;
+ margin-top: 3%;
+
+}
+
+.card {
+    width: 210px;
+    height: 240px;
+    display: inline-block;
+    border-radius: 9px;
+    /* padding: 15px 25px; */
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+  
+   
+}
+
+.card:hover {
+    transform: translateY(-10px)
+}
+
+
+.line1 {animation-timing-function: ease-in-out;
+    width: 8%;
+    height: 1px;
+    background: white;
+    position:relative;
+    animation-name: EaseinOut;
+    animation-duration: 11s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+    bottom: 26%;
+
+}
+
+
+@keyframes EaseinOut { 
+    0% {
+        width: 15%;
+        opacity: 1;
+    }
+    50% {
+        width: 25%;
+        opacity: 0.5;
+    }
+
+    100% {
+        width: 15%;
+        opacity: 1;
+    }
+
+}
+
+.line2 {animation-timing-function: ease-in-out;
+        width: 25%;
+        height: 1px;
+        background: white;
+        position:relative;
+        animation-name: EaseinOut2;
+        animation-duration: 11s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        transition: 0.5s;
+        bottom: 25%;
+}
+
+@keyframes EaseinOut2 { 
+    0% {
+        width: 20%;
+        opacity: 0.5;
+
+    } 
+    50% {
+        width: 10%;
+        opacity: 1;
+
+    }
+
+    100% {
+        width: 20%;
+        opacity: 0.5;
+    
+    }
+
+    }
+    
+.card1 {
+    background-image: url(suspect-1.png); 
+    position:relative;
+    left: 18.2rem;
+    bottom: 8.7rem;
+   
+  
+}
+     
+.card2 {
+    background-image: url(suspect-2.png);
+    position:relative;
+    left: 19.5rem;
+    bottom: 8.7rem;
+  
+}
+
+.card3 {
+    background-image: url(suspect-3.png);
+    position:relative;
+    right: 11.7rem;
+    top: 9rem;
+  
+
+}
+
+.card4 {
+    background-image: url(suspect-4.png);
+    position:relative;
+    right: 10.6rem;
+    top: 9rem;
+}
