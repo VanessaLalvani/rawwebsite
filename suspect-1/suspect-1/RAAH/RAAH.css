@@ -1,0 +1,62 @@
+* {
+    margin: 0px;;
+    padding: 0;
+    box-sizing: border-box;   
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: black;
+
+
+}
+
+.mainbody1 {
+    color: rgb(94, 1, 1);
+    position: relative;
+    font-family: VCR OSD Mono; 
+    font-size: 24pt;
+    animation-name: blink;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    left: 0;
+    bottom: 0; 
+    animation-iteration-count: infinite;
+    text-align: justify;
+    /* text-decoration:line-through; */
+    z-index: 1;
+}
+
+.run1 {
+    color: rgb(255, 255, 255);
+    position:relative;
+    font-size: 23pt;
+    font-family: VCR OSD Mono; 
+    left: 42.2%;
+    bottom: 41.5%; 
+    text-decoration: none;   
+    z-index: 2;
+    
+}
+
+
+
+ @keyframes blink {
+    0% {
+        opacity: 150%;
+    }
+    25% {
+        opacity: 20%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 20%;
+    }
+    100% {
+        opacity: 100%;
+    }
+
+} 
+
