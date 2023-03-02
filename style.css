@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+/* h1{
+    position: static;
+    top: 55%;
+    text-align: left;
+    margin-right: 30%;
+    color:aliceblue;
+    font-famil%y:'Courier New', Courier, monospace ;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60pt;
+    font-kerning: auto;
+}
+
+h2 {
+    color:aliceblue;
+    position: fixed;
+    top: 70%;
+    margin-left: 56%
+    
+}
+
+.date {
+    color: aliceblue;
+    position: fixed;
+    margin-left: 10vw;
+}
+h1:hover {
+-webkit-text-fill-color: rgb(110, 1, 1);
+color: transparent;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 312.5%;
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+    
+
+} */
+
+.background-image {
+    position:fixed;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%
+}
+
+
+.heading{
+    position:absolute;
+    font-family:'VCR OSD Mono';
+    /* font-family: 'MODENINE'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60pt;
+    font-kerning: auto;
+    left: 28.5%;
+    text-decoration: none;
+    margin-bottom: 5%;
+
+}
+.heading:hover{
+    color: rgb(110, 1, 1);
+}
+.hero{
+    display: flex;
+    overflow: hidden;
+    align-items: center;    
+    min-height: 90vh;
+    text-decoration: none;
+
+} 
+
+
+
+

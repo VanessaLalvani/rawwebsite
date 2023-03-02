@@ -1,0 +1,87 @@
+<html lang="en">
+    <head>
+        <title>livingroom</title>
+        <link rel="stylesheet" href="livingroom.css">
+    </head>
+    
+    <body>
+        <img id="livingroom" img class="livingroom" src="livingroom.jpg">
+        
+        <a href="../hallway/hallway.html"> 
+        <button class="button1"> go upstairs</button>
+        </a>
+        
+        <a href="bedroom/bedroom.html"> 
+         <button class="button2"> go inside</button>
+        </a>
+
+        <div class="text">
+            <div class="text1">
+            </div>
+        </div>  
+    </body>
+    <!-- <a href="../../../homepage.html" class="text1"> go back </a>  -->
+    
+
+<script>
+
+var container = document.querySelector(".text1");
+
+
+var speeds = {
+   pause: 1000, //Higher number = longer delay
+   slow: 200,
+   normal: 100,
+   fast: 40,
+   superFast: 10
+};
+
+
+var textLines = [
+   { speed: speeds.normal, string: "is someone there?" },
+
+]
+
+
+var characters = [];
+textLines.forEach((line, index) => {
+   if (index < textLines.length - 1) {
+      line.string += " "; //Add a space between lines
+   }
+
+   line.string.split("").forEach((character) => {
+      var span = document.createElement("span");
+      span.textContent = character;
+      container.appendChild(span);
+      characters.push({
+         span: span,
+         isSpace: character === " " && !line.pause,
+         delayAfter: line.speed,
+         classes: line.classes || []
+      });
+   });
+});
+
+function revealOneCharacter(list) {
+   var next = list.splice(0, 1)[0];
+   next.span.classList.add("revealed");
+   next.classes.forEach((c) => {
+      next.span.classList.add(c);
+   });
+   var delay = next.isSpace && !next.pause ? 0 : next.delayAfter;
+
+   if (list.length > 0) {
+      setTimeout(function () {
+         revealOneCharacter(list);
+      }, delay);
+   }
+}
+
+//Kick it off
+setTimeout(() => {
+   revealOneCharacter(characters);   
+}, 600)
+
+</script>
+
+</html>

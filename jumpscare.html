@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <title>jumpscare</title>
+    <link rel="stylesheet" href="jumpscare.css">
+</head>
+
+    <style>
+        #button {position: absolute; top: 48%; left: 45.5%; width: 10%; height: 2%; cursor: pointer; color: rgb(142, 1, 1); text-decoration-line: underline; font-family: VCR OSD Mono;
+        
+        }
+    </style>
+
+<body>
+
+    <input type="button" id="button" onclick="jumpscare();" value="they're here."/>
+    <img id="jumpscare" img class="jumpscare" src="alternate1.jpg">
+    <audio id="scream" src="jumpscare.mp3"> </audio>
+
+    <script>
+        function jumpscare() {
+
+        var jumpscare = document.getElementById("jumpscare");
+        jumpscare.style.visibility="visible";
+        var audio = document.getElementById("scream");
+        audio.play(); }
+        
+    </script>
+</body>
+
+<a href="../../../index.html" class="text1"> go back </a> 
+
+</html>

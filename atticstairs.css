@@ -1,0 +1,82 @@
+*{ 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;   
+   overflow-x: hidden;
+   overflow-y: hidden;
+   
+}
+
+.atticstairs {
+background-color: black;
+position: absolute; 
+top: 0px; 
+left: 0px; 
+width: 100%; 
+height: 100%; 
+cursor: pointer; 
+z-index: -1;
+}
+
+
+.text span {
+   opacity: 0;
+}
+.text span.revealed {
+   opacity: 1;
+}
+.text span.green {
+   color: #ffffff;
+}
+.text span.red {
+   color: #ffffff;
+}
+
+.text {
+  padding: 35em;
+}
+
+
+.text1 {
+   font-size: 2.2vw;
+   font-family: VCR OSD Mono;
+   word-spacing: 0.2em;
+   margin: 20px -100px;
+   background: rgb(193, 192, 192);
+   padding: 1em;
+   border-bottom: 1vw solid #797979;
+   position:relative;
+   line-height: 1em;
+   width: 500px;
+   height: 105px;
+   align-items: center;
+}
+
+
+button {
+  /* border:none; */
+  background-color: #494949;
+  position: absolute;
+  transform: tranlate(-50%, -50%);
+  top: 37%;
+  left: 48%;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(181, 181, 181);
+  animation-name: delay;
+  animation-duration: 2s;
+  animation-delay: 10s;
+  animation-iteration-count:1; 
+  animation-fill-mode:forwards;
+  opacity: 0%;
+}
+
+@keyframes delay {
+  0% {
+      opacity: 0%
+  }
+  100% {
+      opacity: 100%;
+  }   
+}
